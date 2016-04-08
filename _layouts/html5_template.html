@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML5 Template - Use it to make web pages!</title>
+
+	<!--
+	The base tag breaks the stylesheet includes.
+	<base href="http://cabeen.net/index.php">
+	-->
+
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="small.css" media=print>
+	<meta charset="utf-8">
+	<meta name="author" content="me">
+	<meta name="description" content="A basic HTML5 template, created using only the official W3 spec, Editor's Draft 14 March 2011, available at http://dev.w3.org/html5/spec/Overview.html">
+	<meta name="keywords" content="awesome,awesomeness,ossumniss,html,html5,template,empty document,reference">
+
+	<style>
+		body {
+			background: #ffffff;
+			color: #000000;
+		}
+	</style>
+
+</head>
+<body>
+
+<!-- To fully understand how these elements work and interact with one another to create the age structure, you will want to read about the outline model. -->
+
+	<header>
+		<h1>HTML5 is Awesome</h1>
+		<h2>Let's Rewrite the Web!</h2>
+		<nav>
+			<ul><!--Navigational links-->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1>Sections Group Content</h1>
+		<p>A section is a thematic grouping of content, typically with a heading.</p>
+		<section>
+			<h2>Sub-section Headings</h2>
+			<p>A sub-section of an h1 heading can begin with either an h1 or h2 heading. I do not like the idea of nesting h1 elements like that, even though it is semantically correct. Besides, trying to style "section h1" and "section section h1" and "section section section h1" all differently would be a pain in the neck.</p>
+		</section>
+	</section>
+
+	<nav>
+		Groups of navgation go here. I can be page navigation, site navigation, or something else.
+	</nav>
+
+	<article>
+		<header>
+			<h1>The Very First Rule of Life</h1>
+			<p><time pubdate datetime="2009-10-09T14:28-08:00"></time></p>
+		</header>
+		<p>The article element represents a self-contained composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
+		<p>When article elements are nested, the inner article elements represent articles that are in principle related to the contents of the outer article. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as article elements nested within the article element for the blog entry.<\p>
+		<p>Author information associated with an article element (q.v. the address element) does not apply to nested article elements.</p>
+	</article>
+
+	<aside>
+		<p>The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.</p>
+		<p>The element can be used for typographical effects like pull quotes or sidebars, for advertising, for groups of nav elements, and for other content that is considered separate from the main content of the page.</p>
+	</aside>
+
+	<hgroup>
+		<h1>Dr. Strangelove</h1>
+		<h2>Or: How I Learned to Stop Worrying and Love the Bomb</h2>
+		<aside>Be sure to take good notes around the outline algorithm</aside>
+	</hgroup>
+
+
+
+<footer>
+	<p>The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.</p>
+	<p>Contact information for the author or editor of a section belongs in an address element, possibly itself inside a footer.</p>
+	<p>Footers don't necessarily have to appear at the end of a section, though they usually do.</p>
+	<p>When the footer element contains entire sections, they represent appendices, indexes, long colophons, verbose license agreements, and other such content.</p>
+	<p>The footer element is not sectioning content; it doesn't introduce a new section.</p>
+	<p>When the nearest ancestor sectioning content or sectioning root element is the body element, then it applies to the whole page.</p>
+</footer>
+
+<address>
+	The address element represents the contact information for its nearest article or body element ancestor. If that is the body element, then the contact information applies to the document as a whole.</p>
+	<p>The address element must not be used to represent arbitrary addresses (e.g. postal addresses), unless those addresses are in fact the relevant contact information. (The p element is the appropriate element for marking up postal addresses in general.)</p>
+	<p>The address element must not contain information other than contact information.</p>
+</address>
+
+<!-- <hr> is lame. Don't even use it. -->
+
+<pre>
+The pre element represents a block of preformatted text, in which structure is represented by
+typographic conventions rather than by elements.
+
+In the HTML syntax, a leading newline character immediately following the pre element start tag is
+stripped.
+
+Some examples of cases where the pre element could be used:
+- Including an e-mail, with paragraphs indicated by blank lines, lists indicated by lines prefixed
+  with a bullet, and so on.
+- Including fragments of computer code, with structure indicated according to the conventions of
+  that language.
+- Displaying ASCII art.
+
+Authors are encouraged to consider how preformatted text will be experienced when the formatting
+is lost, as will be the case for users of speech synthesizers, braille displays, and the like. For
+cases like ASCII art, it is likely that an alternative presentation, such as a textual
+description, would be more universally accessible to the readers of the document.
+
+To represent a block of computer code, the pre element can be used with a code element; to
+represent a block of computer output the pre element can be used with a samp element. Similarly,
+the kbd element can be used within a pre element to indicate text that the user is to enter.
+</pre>
+
+</body>
+</html>
