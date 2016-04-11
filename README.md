@@ -13,5 +13,11 @@ I'm trying out a new development environment, using the [Design + Code](https://
   5. Browser Sync
   n. Gulp (Node.JS)
 
-# Resources
-  n. https://github.com/shakyShane/jekyll-gulp-sass-browser-sync
+# Replicating This Environment
+A lot of this was already handled by Github user shakyShane in the README.md of his [jekyll-gulp-sass-browser-sync](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync) repository. You can even watch a [video](quick.as/pvrslgx) about it!
+Go start there, but I'll replicate it here.
+
+  1. Install Jekyll - `$ gem install jekyll`
+  2. NodeJS - download and install
+  3. GulpJS - `$ [sudo] npm install -g gulp`
+w

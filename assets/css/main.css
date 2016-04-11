@@ -3,6 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,500,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -360,5 +362,150 @@ textarea {
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  color: #006622;
+  font-weight: bold; }
+
+.gigantic {
+  font-size: 110px;
+  line-height: 1.09;
+  letter-spacing: -2px; }
+
+.huge, h1 {
+  font-size: 48px;
+  line-height: 1.05;
+  letter-spacing: -1px; }
+
+.large, h2 {
+  font-size: 36px;
+  line-height: 1.14; }
+
+.bigger, h3 {
+  font-size: 32px;
+  line-height: 1.38; }
+
+.big, h4 {
+  font-size: 24px;
+  line-height: 1.38;
+  margin: 0; }
+
+.small, small {
+  font-size: 10px;
+  line-height: 1.2; }
+
+p {
+  margin: 0 0 20px 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+hr {
+  border: solid #009944;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+a {
+  color: #009944;
+  text-decoration: none;
+  outline: 0; }
+
+a:hover, a:focus {
+  color: #00ff71; }
+
+::-moz-selection {
+  background: #00ff66; }
+
+::selection {
+  background: #00ff66; }
+
+::-moz-selection {
+  background: #00ff66; }
+
+img::-moz-selection {
+  background: transparent; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
 body {
-  background: orange; }
+  -webkit-tap-highlight-color: #00ff66; }
+
+body {
+  background: gainsboro;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Open Sans' sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+.home-wrap header {
+  margin: 0;
+  padding: 20px; }
+  .home-wrap header .logo {
+    margin: 0;
+    padding: 0; }
+  .home-wrap header nav.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .home-wrap header nav.site-nav ul li {
+      padding: 12px; }
+
+.home-wrap footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  background: white;
+  border-top: 3px solid #009944;
+  margin: 0;
+  padding: 20px; }
+  .home-wrap footer section {
+    width: 50%;
+    -ms-flex-positive: 1;
+        flex-grow: 1; }
+
+.home-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  background: white; }
+
+.square-appointments {
+  margin: 0;
+  padding: 20px;
+  text-align: center; }
+
+.btn {
+  color: white;
+  background: #009944;
+  border: 2px solid #006622;
+  border-radius: 6px;
+  margin: 5px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 150%;
+  line-height: 1;
+  padding: 10px; }
+  .btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }

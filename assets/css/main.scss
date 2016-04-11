@@ -1,6 +1,12 @@
 @import "0-tools/bourbon/_bourbon";
 @import "0-tools/normalize";
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,500,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
-body {
-    background: orange;
-}
+@import "1-base/vars";
+@import "1-base/base";
+
+@import "3-sections/header";
+@import "3-sections/footer";
+
+@import "4-layouts/home";
