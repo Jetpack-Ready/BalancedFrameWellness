@@ -21,3 +21,14 @@ Go start there, but I'll replicate it here.
   2. NodeJS - download and install
   3. GulpJS - `$ [sudo] npm install -g gulp`
 w
+
+
+
+#First review meeting
+1. Title: Balanced Frame
+   Subtitle: Chiropractic and Wellness Center
+2. Margarety will do a copy review and provide better words
+3. Figure out how to make sure she's coming up in maps and stuff for "chiropractor" "massage" "functional dry needling" "webster certified"
+4. Learn about buying packages through Square and track visits/appointments etc
+5. Learn about scheduling, payments, dealing with cash, etc
+6. 
