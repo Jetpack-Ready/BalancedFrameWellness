@@ -558,6 +558,8 @@ section.super {
     clear: both; }
   section.super ul {
     margin: 0; }
+    section.super ul li:last-child {
+      margin-bottom: 24px; }
   section.super table {
     margin: 24px auto; }
     section.super table tr.bg {
