@@ -1,12 +1,19 @@
 .home-wrap
   max-width: 960px
   margin: 0 auto
+  padding: 0
   background: $content-bg-color
 
 section.hero
-  margin: 12px auto
-  padding: 0 24px
+  margin: 0 auto
+  padding: 32px 24px
   text-align: center
+  background:
+    image: url("/assets/img/bg-wood-fade-parallel-up.png")
+    repeat: no-repeat
+    position: center center
+    size: stretch
+    //size: contain
 
   h1
     font-size: 48pt
@@ -16,7 +23,75 @@ section.hero
     font-size: 20pt
     margin: 0
 
-section.info
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    li
+      padding: 0
+      font-size: 16px
+
+      a
+        padding: 16px
+        margin: 0
+        color: $text-color
+
+        &:hover
+          background: rgba(white, 0.6)
+
+section.super
+  margin: 0 auto
+  padding: 24px
+
+  img.left
+    float: left
+    margin: 0 12px 12px 0
+
+  h1
+    margin: 0
+    padding: 0
+    font-size: 24pt
+
+  h2
+    margin: 0
+    padding: 0
+    font-size: 18pt
+    color: $text-color
+    line-height: 1.5
+
+  h3
+    margin: 12px 0 0
+    padding: 0
+    font-size: 14pt
+    color: $alt-text-color
+    line-height: 1.5
+
+  .unfloat
+    display: block
+    clear: both
+
+  p
+
+  ul
+    margin: 0
+
+  table
+    margin: 24px auto
+
+    tr.bg
+      background: $blank-bg-color
+
+    th
+      font-size: 12pt
+
+    td
+      padding: 4px 12px
+
+section.boxes
   display: flex
   //flex-flow: row wrap
   justify-content: center
@@ -28,17 +103,23 @@ section.info
   @media screen and (max-width: $break-m)
     flex-flow: row wrap
 
-
   section
     flex: 1 1 auto
-    padding: 0 12px
+    margin: 0 6px
+    padding: 0 6px
 
     h1
       font-size: 20pt
+      text-align: center
+      padding: 0 0 4px
+      margin: 0
+      border-bottom: 2pt solid $alt-text-color
+
+    p
+      padding: 4px
 
   @media screen and (max-width: $break-m)
-    section.info1
+    section.box-sm
       flex: 2 1 auto
 
-    h1
-    p
+  section.info

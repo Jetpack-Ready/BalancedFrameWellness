@@ -494,20 +494,80 @@ body {
 .home-wrap {
   max-width: 960px;
   margin: 0 auto;
+  padding: 0;
   background: white; }
 
 section.hero {
-  margin: 12px auto;
-  padding: 0 24px;
-  text-align: center; }
+  margin: 0 auto;
+  padding: 32px 24px;
+  text-align: center;
+  background-image: url("/assets/img/bg-wood-fade-parallel-up.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: stretch; }
   section.hero h1 {
     font-size: 48pt;
     margin: 0; }
   section.hero h2 {
     font-size: 20pt;
     margin: 0; }
+  section.hero ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    section.hero ul li {
+      padding: 0;
+      font-size: 16px; }
+      section.hero ul li a {
+        padding: 16px;
+        margin: 0;
+        color: black; }
+        section.hero ul li a:hover {
+          background: rgba(255, 255, 255, 0.6); }
 
-section.info {
+section.super {
+  margin: 0 auto;
+  padding: 24px; }
+  section.super img.left {
+    float: left;
+    margin: 0 12px 12px 0; }
+  section.super h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24pt; }
+  section.super h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18pt;
+    color: black;
+    line-height: 1.5; }
+  section.super h3 {
+    margin: 12px 0 0;
+    padding: 0;
+    font-size: 14pt;
+    color: dimgray;
+    line-height: 1.5; }
+  section.super .unfloat {
+    display: block;
+    clear: both; }
+  section.super ul {
+    margin: 0; }
+  section.super table {
+    margin: 24px auto; }
+    section.super table tr.bg {
+      background: gainsboro; }
+    section.super table th {
+      font-size: 12pt; }
+    section.super table td {
+      padding: 4px 12px; }
+
+section.boxes {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -515,16 +575,23 @@ section.info {
   margin: 36px 12px;
   padding: 0; }
   @media screen and (max-width: 640px) {
-    section.info {
+    section.boxes {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; } }
-  section.info section {
+  section.boxes section {
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
-    padding: 0 12px; }
-    section.info section h1 {
-      font-size: 20pt; }
+    margin: 0 6px;
+    padding: 0 6px; }
+    section.boxes section h1 {
+      font-size: 20pt;
+      text-align: center;
+      padding: 0 0 4px;
+      margin: 0;
+      border-bottom: 2pt solid dimgray; }
+    section.boxes section p {
+      padding: 4px; }
   @media screen and (max-width: 640px) {
-    section.info section.info1 {
+    section.boxes section.box-sm {
       -ms-flex: 2 1 auto;
           flex: 2 1 auto; } }
