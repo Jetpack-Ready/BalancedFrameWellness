@@ -3,7 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,700italic,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -364,7 +365,7 @@ textarea {
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #006622;
-  font-weight: bold; }
+  font-weight: 700; }
 
 .gigantic {
   font-size: 110px;
@@ -442,25 +443,33 @@ body {
   background: gainsboro;
   font-size: 14px;
   line-height: 1.6;
-  font-family: Helvetica, sans-serif;
+  font-family: Poppins, Helvetica, sans-serif;
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Comfortaa, sans-serif; }
+  font-family: Raleway, sans-serif; }
 
 .home-wrap header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: flex_start;
+      align-content: flex_start;
+  -ms-flex-align: end;
+      align-items: flex-end;
   margin: 0;
   padding: 20px; }
   .home-wrap header a .logo {
     margin: 0;
     padding: 0; }
     .home-wrap header a .logo h1 {
-      font-size: 33px;
+      font-size: 28pt;
       margin: 0; }
     .home-wrap header a .logo h2 {
-      font-size: 16px;
+      font-size: 14pt;
       margin: 0; }
   .home-wrap header nav ul {
     list-style: none;
@@ -474,6 +483,16 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center; }
     .home-wrap header nav ul li {
       padding: 12px; }
+
+@media screen and (max-width: 640px) {
+  .home-wrap header {
+    display: block; }
+    .home-wrap header a {
+      text-align: center; }
+      .home-wrap header a .logo h1 {
+        font-size: 36pt; }
+      .home-wrap header a .logo h2 {
+        font-size: 18pt; } }
 
 .home-wrap footer {
   display: -ms-flexbox;

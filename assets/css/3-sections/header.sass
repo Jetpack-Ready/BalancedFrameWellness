@@ -1,5 +1,9 @@
 //  2-modules/header.sass
 .home-wrap header
+  display: flex
+  justify-content: space-between
+  align-content: flex_start
+  align-items: flex-end
   margin: 0
   padding: 20px
 
@@ -17,11 +21,11 @@
       padding: 0
 
       h1
-        font-size: 33px
+        font-size: 28pt
         margin: 0
 
       h2
-        font-size: 16px
+        font-size: 14pt
         margin: 0
 
   nav
@@ -36,4 +40,16 @@
       li
         padding: 12px
 
-      a
+@media screen and (max-width: $break-m)
+  .home-wrap header
+    display: block
+
+    a
+      text-align: center
+
+      .logo
+        h1
+          font-size: 36pt
+
+        h2
+          font-size: 18pt
