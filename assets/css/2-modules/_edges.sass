@@ -1,0 +1,58 @@
+=section-angle($direction, $angle: 2deg)
+  position: relative
+  z-index: 1
+  $selector: '&:before,&:after'
+
+  #{$selector}
+    background: inherit
+    content: ' '
+    display: block
+    height: 50%
+    left: 0
+    position: absolute
+    right: 0
+    z-index: -1
+    -webkit-backface-visibility: hidden // for Chrome Windows
+
+  @if $direction == 'downward' or $direction == 'inward'
+    &:before
+      top: 0
+      transform: skewY($angle)
+      transform-origin: 100% 0
+
+  @if $direction == 'upward' or $direction == 'inward'
+    &:after
+      bottom: 0
+      transform: skewY($angle * -1)
+      transform-origin: 100%
+
+  @if $direction == 'upward' or $direction == 'outward'
+    &:before
+      top: 0
+      transform: skewY($angle * -1)
+      transform-origin: 0 0
+
+  @if $direction == 'downward' or $direction == 'outward'
+    &:after
+      bottom: 0
+      transform: skewY($angle)
+      transform-origin: 0 0
+
+.edge-no
+  margin: 0 auto
+
+.edge-up
+  margin: 3rem auto
+  +section-angle(upward)
+
+.edge-down
+  margin: 3rem auto
+  +section-angle(downward)
+
+.edge-out
+  margin: 3rem auto
+  +section-angle(outward)
+
+.edge-in
+  margin: 3rem auto
+  +section-angle(inward)
