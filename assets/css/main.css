@@ -582,33 +582,46 @@ body {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  -ms-flex-line-pack: flex_start;
-      align-content: flex_start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   -ms-flex-align: end;
       align-items: flex-end;
   margin: 0;
   padding: 20px; }
-  .home-wrap header a .logo {
-    margin: 0;
-    padding: 0; }
-    .home-wrap header a .logo h1 {
-      font-size: 28pt;
-      margin: 0; }
-    .home-wrap header a .logo h2 {
-      font-size: 14pt;
-      margin: 0; }
-  .home-wrap header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .home-wrap header nav ul li {
-      padding: 12px; }
+  .home-wrap header a {
+    -ms-flex: 1 1 40%;
+        flex: 1 1 40%; }
+    .home-wrap header a .logo {
+      margin: 0;
+      padding: 0; }
+      .home-wrap header a .logo h1 {
+        font-size: 28pt;
+        margin: 0; }
+      .home-wrap header a .logo h2 {
+        font-size: 14pt;
+        margin: 0; }
+  .home-wrap header nav {
+    -ms-flex: 1 1 60%;
+        flex: 1 1 60%; }
+    .home-wrap header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-wrap: no-wrap;
+          flex-wrap: no-wrap;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      .home-wrap header nav ul li {
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+        line-height: 1;
+        padding: 0 12px; }
 
 @media screen and (max-width: 640px) {
   .home-wrap header {
@@ -618,7 +631,12 @@ body {
       .home-wrap header a .logo h1 {
         font-size: 36pt; }
       .home-wrap header a .logo h2 {
-        font-size: 18pt; } }
+        font-size: 18pt; }
+    .home-wrap header nav ul {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
 .home-wrap footer {
   display: -ms-flexbox;
@@ -756,3 +774,7 @@ section.boxes {
     letter-spacing: 1px;
     margin: 0;
     padding: 1rem; }
+
+img,
+iframe {
+  max-width: 100%; }

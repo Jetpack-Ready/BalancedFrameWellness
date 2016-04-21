@@ -2,12 +2,15 @@
 .home-wrap header
   display: flex
   justify-content: space-between
-  align-content: flex_start
+  flex-wrap: wrap
+  align-content: flex-start
   align-items: flex-end
   margin: 0
   padding: 20px
 
   a
+    flex: 1 1 40%
+
     .logo
       //+hide-text
       //
@@ -29,16 +32,21 @@
         margin: 0
 
   nav
+    flex: 1 1 60%
+
     ul
       list-style: none
       margin: 0
       padding: 0
       display: flex
       flex-direction: row
-      justify-content: center
+      flex-wrap: no-wrap
+      justify-content: flex-end
 
       li
-        padding: 12px
+        flex: 1 1 auto
+        line-height: 1
+        padding: 0 12px
 
 @media screen and (max-width: $break-m)
   .home-wrap header
@@ -53,3 +61,10 @@
 
         h2
           font-size: 18pt
+
+    nav
+      ul
+        flex-wrap: wrap
+        justify-content: center
+
+        li
