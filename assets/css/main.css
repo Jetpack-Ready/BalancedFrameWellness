@@ -594,7 +594,7 @@ body {
     -ms-flex: 1 1 40%;
         flex: 1 1 40%; }
     .home-wrap header a .logo {
-      margin: 0;
+      margin: 0 12px 0 0;
       padding: 0; }
       .home-wrap header a .logo h1 {
         font-size: 28pt;
@@ -607,7 +607,7 @@ body {
         flex: 1 1 60%; }
     .home-wrap header nav ul {
       list-style: none;
-      margin: 0;
+      margin: 24px 0 0;
       padding: 0;
       display: -ms-flexbox;
       display: flex;
@@ -616,7 +616,9 @@ body {
       -ms-flex-wrap: no-wrap;
           flex-wrap: no-wrap;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
       .home-wrap header nav ul li {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
@@ -632,11 +634,15 @@ body {
         font-size: 36pt; }
       .home-wrap header a .logo h2 {
         font-size: 18pt; }
-    .home-wrap header nav ul {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: center;
-          justify-content: center; } }
+    .home-wrap header nav {
+      text-align: center; }
+      .home-wrap header nav ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .home-wrap header nav ul li {
+          padding: 12px; } }
 
 .home-wrap footer {
   display: -ms-flexbox;
