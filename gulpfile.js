@@ -1,9 +1,9 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
-var prefix      = require('gulp-autoprefixer');
-var cp          = require('child_process');
-var jade        = require('gulp-jade');
+var gulp    = require('gulp');
+var bsync   = require('browser-sync');
+var sass    = require('gulp-sass');
+var prefix  = require('gulp-autoprefixer');
+var cp      = require('child_process');
+var jade    = require('gulp-jade');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -15,7 +15,7 @@ var messages = {
  * Build the Jekyll Site
  */
 gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
+    bsync.notify(messages.jekyllBuild);
     return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
@@ -25,7 +25,7 @@ gulp.task('jekyll-build', function (done) {
  * Rebuild Jekyll & do page reload
  */
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
+    bsync.reload();
 });
 
 
@@ -33,7 +33,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
  * Wait for jekyll-build, then launch the Server
  */
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-    browserSync({
+    bsync({
         server: {
             baseDir: '_site'
         },
@@ -49,11 +49,11 @@ gulp.task('sass', function () {
     return gulp.src('assets/css/main.scss')
         .pipe(sass({
             includePaths: ['css'],
-            onError: browserSync.notify
+            onError: bsync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/assets/css'))
-        .pipe(browserSync.reload({stream:true}))
+        .pipe(bsync.reload({stream:true}))
         .pipe(gulp.dest('assets/css'));
 });
 
@@ -71,7 +71,7 @@ gulp.task('jade', function(){
 
 /**
  * Watch scss files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
+ * Watch html/md files, run jekyll & reload bsync
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
@@ -82,6 +82,6 @@ gulp.task('watch', function () {
 
 /**
  * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
+ * compile the jekyll site, launch bsync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
