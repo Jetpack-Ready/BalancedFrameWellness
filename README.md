@@ -23,9 +23,9 @@ Go start there, but I'll replicate it here.
   4. Use the Bootstrap CDN
 
 # Next Steps
-* Add photography
-* Lay out the footer
-* Replace Bootstrap CDN with SASS files to modify variables (especially color)
+* Choose brand colors
+* Create better imagery for header, etc.
+* Add front page jumbotron with bg video and book now button
 
 # Latest Review
 1. New copy provided by Kia
@@ -39,3 +39,6 @@ Go start there, but I'll replicate it here.
 3. Figure out how to make sure she's coming up in maps and stuff for "chiropractor" "massage" "functional dry needling" "webster certified"
 4. Learn about buying packages through Square and track visits/appointments etc
 5. Learn about scheduling, payments, dealing with cash, etc
+
+# Eventually
+* Create a project with Bootstrap 4 source (and Jekyll, Gulp, Jade, etc)
