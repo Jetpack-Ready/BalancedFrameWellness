@@ -27,7 +27,15 @@ Go start there, but I'll replicate it here.
 * Create better imagery for header, etc.
 * Add front page jumbotron with bg video and book now button
 
-# Latest Review
+# Review 2016-10-25
+1. Get prenatal pictures
+2. DONE Add pricing and packages
+3. Margaret will email copy changes/additions
+4. DONE update phone number
+5. DONE reposition background
+6. DONE reposition Margaret's photo
+
+# Prior Review
 1. New copy provided by Kia
 2. New photography provided by Kia
 3. Simplified content
